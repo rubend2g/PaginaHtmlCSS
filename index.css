@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto','sans-serif'; 
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1.8px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(72, 14, 126);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: blueviolet;}
+
+header{
+    background-color: rgb(245,245,245);
+    width: 100%;
+}
+
+header .logo{
+   margin: 0;
+   padding: 20px 30px;   
+   font-weight: bold;
+   color: blueviolet;
+   font-size: 1.5em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a{
+    padding: 5px 12px ;
+    text-decoration: none;
+    font-weight: bold;
+    color: black ;
+}
+header a:hover{
+    color: blueviolet;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: antiquewhite;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/img2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#hero h1{
+    color: white;
+}
+
+#somos-tien-elec .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Algunos-productos{
+    background-color: rgb(30,30,30);
+    color:white;
+    text-align: center;
+}
+
+#Algunos-productos .container{
+    padding: 100px 0px;
+}
+
+#Algunos-productos h2{
+    margin-top:  0;
+}
+
+#Algunos-productos p{
+    display: none;
+}
+ 
+#Algunos-productos .carta{
+    background-position: center ;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px ;
+}
+
+.carta:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/notebook.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/celular.jpg");
+
+    }
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/electrodomesticos.webp");
+
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 3em;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+@media (min-width:500px){
+    header{
+        position: fixed;
+        justify-content: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #somos-tien-elec .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #somos-tien-elec .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #somos-tien-elec h2{
+        margin-top: 0px;
+    }
+
+    #somos-tien-elec .img-container{
+        background-image:url("media/espacio.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #Algunos-productos .Productos{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Algunos-productos h3{
+        margin-top: 0;
+    }
+
+    #Algunos-productos p{
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    #Algunos-productos .carta{
+        padding: 15px;
+        background-color: rgb(80,80,80);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
